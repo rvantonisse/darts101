@@ -44,7 +44,7 @@ Thumbs.db
 # Project folders #
 ###################
 build/
-dev/
-dist/
+development/
+distribution/
 node_modules/
 bower_components/
