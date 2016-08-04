@@ -13,9 +13,9 @@ with [grunt-to-html-project](http://github.com/rvantonisse/grunt-to-html-project
 ## Application contents
 
 ### Darts supported game types
-* [v] 501
-* [v] 301
-* [v] 101
+* [x] 501
+* [x] 301
+* [x] 101
 * [ ] Tactics
 * [ ] Training
 	* [ ] Singles
@@ -32,8 +32,8 @@ with [grunt-to-html-project](http://github.com/rvantonisse/grunt-to-html-project
 * [ ] Other...
 
 ### Darts supported game modes
-* [v] Single player
-* [v] 2 player
+* [x] Single player
+* [x] 2 player
 * [ ] Training mode
 
 ### Darts statistics
