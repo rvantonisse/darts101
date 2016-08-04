@@ -5,7 +5,7 @@
   =========
 
 This is a web version of a darts scoreboard. Usable for all devices. Created
-with [grunt-to-html-project](http://github.com/rvantonisse/grunt-to-html-project) .
+with [grunt-to-html-project](http://github.com/rvantonisse/grunt-to-html-project) . You can [see darts101 in action here](http://darts101.rv-antonisse.nl).
 
 ## Table of Contents
 
