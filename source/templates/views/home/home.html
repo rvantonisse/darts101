@@ -1,0 +1,87 @@
+{% extends "../index.html" %}
+
+{% block content %}
+<article id="home" class="home">
+  <header>
+    <h2>Darts101</h2>
+    <p>When you need an advanced whiteboard for your darts scoring.</p>
+  </header>
+  <p>
+    Play darts with your friends and save the games on your smartphone, tablet or pc!
+    If you are a pro, keep track of your statistics and train yourself for coming tournaments.
+  </p>
+  <p>
+    Currently supporting the following features:
+  </p>
+  <ul>
+    <li><a href="/games/X01/">Play a 1 player X01 game</a> - a classic darts game with options!</li>
+  </ul>
+
+  <a name="coming-soon"></a>
+  <h3>Coming soon</h3>
+  <ul>
+    <li>Cricket / Tackticks - Fire your darts at 20 to bullseye</li>
+    <li>Training games:
+      <ul>
+        <li>Finisher - train your finishing scores, from 1 dart to 3 dart finishes.</li>
+        <li>Accuracy training - throw 3 darts at a given target; singles, doubles & triples.</li>
+      </ul>
+    </li>
+    <li>Statistics:
+      <ul>
+        <li>X01 Match averages</li>
+        <li>X01 Doubles accuracy</li>
+      </ul>
+    </li>
+    <li>Player creation and saving locally, not online!</li>
+  </ul>
+
+  <a name="update-history"></a>
+  <h3>Update history</h3>
+
+  {# Version 1.2 #}
+  <h4>Next update coming:</h4>
+  <ul>
+    <li>
+      <strong>Local storage</strong>
+      <ul>
+        <li>Create and save up to 8 players on your device</li>
+        <li>Saving data from the last 25 games played per player</li>
+        <li>Automaticly save the last game state for when you accidently close the game, or when you need a break. Pick up where you left!</li>
+      </ul>
+    </li>
+    <li>
+      <strong>Gameplay improvements</strong>
+      <ul>
+        <li>Short leg, set and game reports inbetween games</li>
+        <li>Undo wrongly submitted scores</li>
+      </ul>
+    </li>
+  </ul>
+
+  {# Version 1.1 - 501 to X01 conversion #}
+  <h4>Version 1.1 --- 05/07/2016</h4>
+  <ul>
+    <li>
+      501 is conversed to X01!
+      <ul>
+        <li>Play with friends!</li>
+        <li>More options available!</li>
+        <li>Gameplay improvements</li>
+        <li>Usability improvements</li>
+      </ul>
+    </li>
+  </ul>
+
+  {# Version 1.0 - first playable #}
+  <h4>Version 1.0 --- 29/06/2016</h4>
+  <ul>
+    <li>Play a simple 1 player 501 game</li>
+  </ul>
+  <h3>If all breaks...</h3>
+  <p>
+    Please <a href="mailto:info@rv-antonisse.nl">send me an email</a> when you think something is not working as intended.
+
+  </p>
+</article>
+{% endblock %}

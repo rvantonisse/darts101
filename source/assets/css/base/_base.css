@@ -1,0 +1,60 @@
+/*!
+** Darts101
+*/
+html,
+body {
+	height: 100%;
+}
+
+.content {
+	text-align: center;
+	overflow: hidden;
+}
+.content > article {
+	display: inline-block;
+	padding: 1em;
+	max-width: 20rem;
+
+	text-align: left;
+}
+
+@media (min-width: 40em) {
+	.content > article {
+		max-width: 40rem;
+		font-size: 1.25em;
+	}
+}
+@media (min-width: 60em) {
+	.content > article {
+		max-width: 60rem;
+		font-size: 1.5em;
+	}
+}
+@media (min-device-width: 40em) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
+	.content > article {
+		max-width: 40rem;
+		font-size: 1.25em;
+	}
+}
+@media (min-device-width: 60em) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
+	.content > article {
+		max-width: 60rem;
+		font-size: 1.5em;
+	}
+}
+
+ul {
+	margin: 0;
+	padding: 0 0 0 1.5em;
+	list-style-type: none;
+}
+ul > li {
+	margin: 0;
+	padding: 0;
+}
+ul > li:before {
+	display: inline;
+	margin-left: -1.5em;
+	margin-right: .5em;
+	content: '\27B5';
+}

@@ -1,0 +1,20 @@
+/* .X01 */
+.game-X01 {
+	position: relative;
+	height: 100%;
+	background-color: #eee;
+}
+.article-header {
+	clear: both;
+	position: relative;
+
+	overflow: hidden;
+}
+.game-started {
+	opacity: 0;
+	-webkit-transform: translateY(-100%);
+	transform: translateY(-100%);
+}
+.scoreboard {
+	display: none;
+}

@@ -1,0 +1,13 @@
+{
+	"view-name": "home",
+	"menu-order": 1,
+	"view-data": {
+		"meta": {
+			"author": "Roel Antonisse",
+			"date": "00-00-0000",
+			"description": "This is your first page",
+			"keywords": "home, first, page",
+			"title": "Darts101"
+		}
+	}
+}

@@ -1,0 +1,44 @@
+/* .game-info */
+.game-info {
+	overflow: hidden;
+	width: 100%;
+
+	text-align: center;
+	background-color: #39c;
+	border-bottom: solid 1px #000;
+}
+.game-info > h2 {
+	margin: 0;
+	padding: 0;
+}
+.game-info-version {
+	display: inline-block;
+	margin: 0;
+	padding-top: .5em;
+}
+.game-info-version:after {
+	display: inline;
+	content: attr(data-version);
+
+}
+.game-scoreboard {
+	margin: 0;
+	padding: .25em;
+	list-style-type: none;
+	text-align: center;
+	background-color: #4ad;
+}
+.game-scoreboard > li {
+	display: inline-block;
+}
+.game-scoreboard > li + li {
+	margin-left: 1em;
+}
+
+.game-scoreboard > li:before {
+	content: '';
+}
+
+@media (min-width: 40em) {
+	.game-info {}
+}

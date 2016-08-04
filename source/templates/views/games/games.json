@@ -1,0 +1,13 @@
+{
+	"view-name": "games",
+	"menu-order": 10,
+	"view-data": {
+		"meta": {
+			"author": "the author",
+			"date": "00-00-0000",
+			"description": "A description for games",
+			"keywords": "games, keyword",
+			"title": "games"
+		}
+	}
+}

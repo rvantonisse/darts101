@@ -1,0 +1,1 @@
+/* _VIEW-NAME_.js */

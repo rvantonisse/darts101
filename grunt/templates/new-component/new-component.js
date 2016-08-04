@@ -1,0 +1,1 @@
+/* _COMPONENT-NAME_.js */

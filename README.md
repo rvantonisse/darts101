@@ -4,7 +4,8 @@
 # Darts 101
   =========
 
-This is a web version of a darts scoreboard. Usable for all devices.
+This is a web version of a darts scoreboard. Usable for all devices. Created
+with [grunt-to-html-project](http://github.com/rvantonisse/grunt-to-html-project) .
 
 ## Table of Contents
 
@@ -12,9 +13,9 @@ This is a web version of a darts scoreboard. Usable for all devices.
 ## Application contents
 
 ### Darts supported game types
-* [ ] 501
-* [ ] 301
-* [ ] 101
+* [v] 501
+* [v] 301
+* [v] 101
 * [ ] Tactics
 * [ ] Training
 	* [ ] Singles
@@ -31,8 +32,8 @@ This is a web version of a darts scoreboard. Usable for all devices.
 * [ ] Other...
 
 ### Darts supported game modes
-* [ ] Single player
-* [ ] Multi player
+* [v] Single player
+* [v] 2 player
 * [ ] Training mode
 
 ### Darts statistics
@@ -43,6 +44,3 @@ This is a web version of a darts scoreboard. Usable for all devices.
 * [ ] Top ten doubles
 * [ ] Win rate (Multi player)
 * [ ] Other game mode specific statistics.
-
-
-

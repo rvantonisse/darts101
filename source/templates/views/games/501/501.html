@@ -1,0 +1,49 @@
+{% extends "../games.html" %}
+
+{% block title %}{{ title }}{% endblock %}
+
+{% block content %}
+<div class="game-501">
+	<header class="article-header">
+	<!-- 
+	Game info;
+		Gametype; 101/301/501
+		Setnr
+		Legnr
+	-->
+	{% include "../../../components/game-info/game-info.html" %}
+	<!-- 
+	Playerinfo
+		Name
+		Sets won
+		Legs won
+		Turn
+	-->
+	{% include "../../../components/player-info/player-info.html" %}
+	</header>
+	<div>
+		<!-- 
+		Scoreboard 
+			Remaining score
+			View all scores
+		-->
+		<div class="scoreboard">
+			<h3>Scores</h3>
+			<ol class="score-list">
+				<li class="score-entry-heading"><span class="score-scored">Scored</span><span class="score-result">Remaining</span></li>
+				<li class="score-entry"><span class="score-scored">#</span> <span class="score-result">#</span></li>
+			</ol>
+		</div>
+		<!-- 
+		Score input
+			lot of buttons!
+		-->
+		<div class="score-input-wrap">
+			{% include "../../../components/score-input/score-input.html" %}
+		</div>
+		<!-- END Score Input -->
+	</div>
+
+</div>
+<div class="msg-box" data-content="Message placeholder"></div>
+{% endblock %}

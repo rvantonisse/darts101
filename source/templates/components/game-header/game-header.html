@@ -1,0 +1,26 @@
+<!-- game-header -->
+<header class="game-header">
+	<h1>
+		<a class="game-menu-trigger" href="#menu" title="Open the game menu">
+			{{ viewData.meta.title | capitalize }}
+		</a>
+	</h1>
+    <p class="game-info-version" data-version="X01">Game </p>
+	<!-- site-nav -->
+	<nav id="menu" class="game-menu">
+		<header>
+			<h2>Game menu</h2>
+			<a href="#" class="menu-close" title="close the menu">
+				<span>close menu</span>
+			</a>
+		</header>
+		<ul class="menu-list">
+			<li class="menu-list-item">
+				<a class="menu-link" href="/games/X01/">Reset game</a>
+			</li>
+			<li class="menu-list-item">
+				<a class="menu-link" href="/games/#">Exit game</a>
+			</li>
+		</ul>
+	</nav>
+</header>

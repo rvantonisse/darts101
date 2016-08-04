@@ -1,0 +1,17 @@
+/*
+** FEEDBACK
+*/
+.fb {
+	-webkit-transition: all .3s ease;
+	transition: all .3s ease;
+}
+.fb-state-true {
+	color: #030 !important;
+	background-color: #4d4 !important;
+	border-color: #3c3 !important;
+}
+.fb-state-false {
+	color: #300 !important;
+	background-color: #d44 !important;
+	border-color: #c33 !important;
+}

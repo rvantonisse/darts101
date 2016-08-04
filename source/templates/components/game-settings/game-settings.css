@@ -1,0 +1,99 @@
+/* .game-settings */
+.game-settings-wrap {
+	z-index: 10;
+	position: fixed;
+	top: 0;
+	left: 0;
+	box-sizing: border-box;
+	width: 100%;
+	height: 100%;
+	padding: 1em 0;
+	text-align: center;
+	background-color: #eee;
+	overflow: auto;
+
+	-webkit-transition: all .5s ease;
+	transition: all .5s ease;
+}
+
+.game-settings {
+	box-sizing: border-box;
+	display: inline-block;
+	padding: 1em;
+	width: 100%;
+	max-width: 60em;
+
+	background-color: #fff;
+	border: solid 1px #333;
+	border-radius: 1em;
+	box-shadow: 0 0 1em 0 #000;
+}
+.game-settings-title {
+	margin: 0;
+	padding: 1em;
+	color: #fff;
+	background-color: #39c;
+}
+.game-setting {
+	display: block;
+	margin: 0;
+	padding: .1em;
+
+	text-align: center;
+	background-color: #ddd;
+}
+.game-settings > :first-child {
+	border-top-right-radius: .5em;
+	border-top-left-radius: .5em;
+}
+
+.game-setting:after {
+	display: block;
+	width: 100%;
+	height: 1px;
+	content: " ";
+	clear: both;
+}
+.game-setting + .game-setting {
+	margin-top: 1em;
+}
+.settings-option {
+	position: relative;
+	display: inline-block;
+	margin: .25em;
+}
+.game-setting-name {
+	margin: 0;
+}
+.settings-option > input,
+.settings-option > label {
+	cursor: pointer;
+}
+.settings-option > input {
+	position: absolute;
+	top: 0;
+	left: 0;
+	-webkit-opacity: 0;
+	opacity: 0;
+}
+.settings-option > label {
+	display: block;
+	padding: 1em;
+	color: #333;
+	background-color: #fff;
+	border: solid 1px #000;
+	border-radius: 1em;
+
+	-webkit-transition: all .3s ease;
+	transition: all .3s ease;
+}
+.settings-option > input:checked + label {
+	color: #fff;
+	background-color: #369;
+}
+.game-settings-control > .btn {
+	float: left;
+}
+.game-settings-control > .btn + .btn {
+	margin-left: .5em;
+}

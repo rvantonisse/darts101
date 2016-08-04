@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
+
+    <title>{% block title %}Darts101{% endblock %}</title>
+    <meta name="author" content="{{ viewData.meta.author }}">
+    <meta name="description" content="{{ viewData.meta.description }}">
+    <meta name="keywords" content="{{ viewData.meta.keywords }}">
+
+    <!-- Icons -->
+    <link rel="shortcut icon" href="favicon.png">
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" type="text/css" href="{{ cssPath }}">
+    {% if (mode == 'distribution') %}
+    <!-- 
+    A developer stylesheet/script is available excluding the '.min' in the path to the asset.
+    Have fun!
+    -->
+    {% endif %}
+</head>
+<body>
+    {% block header %}
+    {% include "../components/site-header/site-header.html" %}
+    {% endblock %}
+    <!-- CONTENT -->
+    <section class="content">
+    {% block content %}{% endblock %}
+    </section>
+    <!-- /CONTENT -->
+    {% block footer %}
+    {% include "../components/site-footer/site-footer.html" %}
+    {% endblock %}
+    <!-- SCRIPTS -->
+    <script src="{{ jsPath }}"></script>
+
+    <!-- LIVERELOAD -->
+    {% if (mode == 'development') %}
+    <script src="//localhost:35729/livereload.js"></script>
+    {% endif %}
+</body>
+</html>

@@ -1,0 +1,11 @@
+/* .site-footer */
+.site-footer {
+	padding: 1em;
+	text-align: center;
+	border-top: solid 1px #333;
+}
+
+
+@media (min-width: 40em) {
+	.site-footer {}
+}

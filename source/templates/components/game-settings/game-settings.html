@@ -1,0 +1,23 @@
+<!-- game-settings -->
+<form class="game-settings" name="gameSettings">
+	<h3 class="game-settings-title">
+		{{ viewData.meta.title }} - game settings
+	</h3>
+	{% if viewData.gameSettings %}
+	{% for setting, options in viewData.gameSettings %}
+	<div id="{{ setting }}" class="game-setting">
+		<h4 class="game-setting-name">{{ setting | lower | capitalize }}</h4 class="game-setting-name">
+		{% for option in options %}
+		<div class="settings-option">
+			<input id="{{ setting }}{{ option.value }}" name="{{ setting }}" type="radio" value="{{ option.value }}" {% if option.default %}checked{% endif %}>
+			<label for="{{ setting }}{{ option.value }}">{{ option.value }}</label>
+		</div>
+		{% endfor %}
+	</div>
+	{% endfor %}
+	{% endif %}
+	<div class="btn-container">
+		<a class="btn btn-color-red" href="/games/">Exit to game overview</a>
+		<button class="btn btn-color-blue" type="submit">Start game</button>
+	</div>
+</form>

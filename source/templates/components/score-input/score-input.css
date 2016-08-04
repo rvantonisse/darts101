@@ -1,0 +1,58 @@
+/* .score-input */
+.score-input-wrap {
+	padding: 2em 0;
+	overflow: hidden;
+	text-align: center;
+	background-color: #ccc;
+}
+
+.score-input-container {
+	display: inline-block;
+	margin: 0;
+	padding: 1em;
+	width: 100%;
+	max-width: 20em;
+
+	font-size: .75em;
+	background-color: #666;
+	border-radius: 1em;
+}
+
+
+.score-input-display {
+	box-sizing: border-box;
+	display: block;
+	float: left;
+	margin: 0 0 .5em 0;
+	padding: .5em .25em;
+	padding-right: 0;
+	min-height: 2.25em;
+	
+	font-size: 2em;
+	text-align: center;
+	letter-spacing: .1em;
+	color: #111;
+	background-color: #eee;
+
+	border-width: 0;
+	border-radius: .5em;
+
+	outline: 0;
+
+	-webkit-transition: all .3s ease;
+	transition: all .3s ease;
+}
+.score-input-display:after {
+	display: inline;
+	content: attr(data-value);	
+}
+@media (min-width: 60em) {
+	.score-input-button:hover {
+		transition-duration: .3s;
+	}
+}
+.score-input-buttons > .btn {
+	float: left;
+}
+
+

@@ -1,0 +1,50 @@
+/* .message-box */
+.message-box {
+	position: fixed;
+	top: 0;
+	left: 0;
+	display: block;
+	width: 100%;
+	height: 100%;
+	background-color: #eee;
+	background-color: rgba(239,239,239,0.75);
+	transition: all .3s ease;
+}
+.message:after {
+	display: inline;
+	content: attr(data-message);
+}
+.show-message {
+	z-index: 1000;
+	opacity: 1;
+}
+.hide-message {
+	z-index: 0;
+	opacity: 0;
+	visibility: hidden;
+}
+.message-container {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	-webkit-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+	display: block;
+	margin: 0;
+	padding: 1em;
+
+	color: #000;
+	background-color: #eee;
+	border: solid 1px #000;
+	border-radius: 1em;
+	box-shadow: 0 0 1em 0 #000;
+}
+.message-buttons > .btn {
+	display: inline-block;
+	padding: .5em;
+	border-radius: .5em;
+}
+
+@media (min-width: 40em) {
+	.message-box {}
+}

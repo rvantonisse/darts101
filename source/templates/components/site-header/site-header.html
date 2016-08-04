@@ -1,0 +1,17 @@
+<!-- site-header -->
+<header class="site-header">
+	<h1><a class="menu-trigger" href="#menu" title="Open the Darts101 menu">Darts101</a></h1>
+	<p class="site-pagetitle">{{ viewData.meta.title | capitalize}}</p>
+	<!-- site-nav -->
+	<nav id="menu" class="site-nav">
+		<header>
+			<h2>Menu</h2>
+			<a href="#" class="menu-close" title="close the menu"><span>close menu</span></a>
+		</header>
+		<ul class="menu-list">
+			{% for item in menu %}
+			<li class="menu-list-item"><a class="menu-link" href="{{ item.link }}">{{ item.title }}</a></li>
+			{% endfor %}
+		</ul>
+	</nav>
+</header>

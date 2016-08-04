@@ -1,0 +1,120 @@
+/*
+** BUTTONS
+*/
+.btn-container {
+	display: inline-block;
+	margin-top: 1em;
+	padding: .5em;
+	text-align: center;
+	background-color: #999;
+	border-radius: .5em;
+}
+.btn {
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+	display: inline-block;
+	margin: 0;
+	padding: 1em .5em;
+
+	font-size: 1.25em;
+	text-decoration: none;
+
+	border-style: solid;
+	border-top-width: 1px;
+	border-left-width: 1px;
+	border-right-width: 1px;
+	border-bottom-width: 3px;
+
+	outline: 0;
+	cursor: pointer;
+
+	transition: all 1s ease;
+}
+
+/* SIZING */
+.btn-size-1of1 {
+	width: 100%;
+}
+.btn-size-1of2 {
+	width: 50%;
+}
+.btn-size-1of3 {
+	width: 33.33333%;
+	width: -webkit-calc(100% / 3);
+}
+.btn-size-2of3 {
+	width: 66.66666%;
+	width: -webkit-calc((100% / 3) * 2);
+}
+
+
+
+/* COLORING */
+.btn-color-green {
+	color: #030;
+	background-color: #3c3;
+	border-top-color: #4d4;
+	border-left-color: #4d4;
+	border-right-color: #2b2;
+	border-bottom-color: #2b2;
+}
+.btn-color-red {
+	color: #fff;
+	background-color: #c33;
+	border-top-color: #d44;
+	border-left-color: #d44;
+	border-right-color: #b22;
+	border-bottom-color: #b22;
+}
+.btn-color-blue {
+	color: #fff;
+	background-color: #39c;
+	border-top-color: #4ad;
+	border-left-color: #4ad;
+	border-right-color: #28b;
+	border-bottom-color: #28b;
+}
+
+
+.btn-color-black {
+	color: #fff;
+	background-color: #333;
+	border-top-color: #444;
+	border-left-color: #444;
+	border-right-color: #222;
+	border-bottom-color: #222;
+}
+.btn-color-white {
+	color: #333;
+	background-color: #eed;
+	border-top-color: #ffe;
+	border-left-color: #ffe;
+	border-right-color: #ddc;
+	border-bottom-color: #ddc;
+}
+@media (min-width: 60em) {
+	.btn-color-red:hover {
+		color: #000;
+		background-color: #d44;
+		border-color: #c33;
+	}
+	.btn-color-blue:hover {
+		color: #000;
+		background-color: #4ad;
+		border-color: #39c;
+	}
+	.btn-color-green:hover {
+		color: #000;
+		background-color: #4d4;
+		border-color: #3c3;
+	}
+	.btn-color-black:hover {
+		background-color: #444;
+		border-color: #333;
+	}
+	.btn-color-white:hover {
+		color: #000;
+		background-color: #ffe;
+		border-color: #eed;
+	}
+}

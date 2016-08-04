@@ -1,0 +1,79 @@
+{
+	"view-name": "X01",
+	"menu-order": 10,
+	"view-data": {
+		"meta": {
+			"author": "Roel Antonisse",
+			"date": "00-00-0000",
+			"description": "A classic darts game X01. Each player needs to finish X points to win.",
+			"keywords": "X01, keyword",
+			"title": "X01"
+		},
+		"gameSettings": {
+			"players": [
+				{
+					"default": true,
+					"value": 1
+				},
+				{
+					"default": false,
+					"value": 2
+				}
+			],
+			"gameVariant": [
+				{
+					"default": false,
+					"value": 101
+				},
+				{
+					"default": false,
+					"value": 301
+				},
+				{
+					"default": true,
+					"value": 501
+				},
+				{
+					"default": false,
+					"value": 701
+				},
+				{
+					"default": false,
+					"value": 1001
+				}
+			],
+			"sets": [
+				{
+					"default": false,
+					"value": 1
+				},
+				{
+					"default": true,
+					"value": 3
+				},
+				{
+					"default": false,
+					"value": 5
+				}
+			],
+			"legs": [
+				{
+					"default": false,
+					"value": 1
+				},
+				{
+					"default": false,
+					"value": 3
+				},
+				{
+					"default": true,
+					"value": 5
+				},
+				{
+					"default": false,
+					"value": 7
+				}
+			]
+		}
+	}
+}

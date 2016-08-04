@@ -1,0 +1,57 @@
+/* .501 */
+.game-501 {
+	padding-bottom: 1em;
+	height: 100%;
+	background-color: #eee;
+}
+.article-header {
+	clear: both;
+	position: relative;
+
+	overflow: hidden;
+}
+.game-info {
+	overflow: hidden;
+	width: 100%;
+
+	text-align: center;
+	background-color: #39c;
+	border-bottom: solid 1px #000;
+}
+.game-info > h2 {
+	margin: 0;
+	padding: 0;
+}
+.game-scoreboard {
+	margin: 0;
+	padding: .25em;
+	list-style-type: none;
+	text-align: center;
+	background-color: #4ad;
+}
+.game-scoreboard > li {
+	display: inline-block;
+}
+.game-scoreboard > li + li {
+	margin-left: 1em;
+}
+.scoreboard {
+	display: none;
+}
+.score-input-wrap {
+	overflow: hidden;
+	text-align: center;
+}
+.msg-box {
+	z-index: 1000;
+	display: block;
+	position: fixed;
+	bottom: 1em;
+	width: 100%;
+
+	visibility: hidden;
+}
+.msg-box:after {
+	display: inline;
+	content: attr(data-content);
+}

@@ -1,0 +1,50 @@
+/* .game-report */
+.game-report-container {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+
+	text-align: center;
+	background-color: #eee;
+	background-color: rgba(239,239,239,.75);
+	transition: all .5s ease;
+}
+.game-report-container[data-is-displayed="true"] {
+	z-index: 1000;
+	opacity: 1;
+	visibility: visible;
+}
+.game-report-container[data-is-displayed="false"] {
+	z-index: 0;
+	opacity: 0;
+	visibility: hidden;
+}
+.game-report {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	-webkit-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+	display: inline-block;
+	padding: 1em;
+	background-color: #fff;
+
+	border-radius: 1em;
+	box-shadow: 0 0 1em 0 #333;
+}
+.report-turns {}
+.report-turns:after {
+	content: attr(data-value);
+}
+.report-winner {}
+.report-winner:after {
+	content: attr(data-value);
+}
+.report-type {}
+.report-type:after {
+	content: attr(data-value);
+}
+.report-players {
+}
