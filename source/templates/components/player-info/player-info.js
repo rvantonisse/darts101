@@ -1,5 +1,5 @@
-/* 
-** player-info.js 
+/*
+** player-info.js
 ** Handles the player object and the player info in games
 */
 var DARTS101 = DARTS101 || {};
@@ -30,7 +30,6 @@ DARTS101.playerInfo = function (DARTS101) {
 	// Create a player object
 	function Player (name) {
 		this.name = name;
-		this.matches = [];
 		this.currentMatch = {
 			setsWon: 0,
 			legsWon: 0
