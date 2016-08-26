@@ -1,0 +1,13 @@
+{
+	"view-name": "players",
+	"menu-order": 2,
+	"view-data": {
+		"meta": {
+			"author": "RV Antonisse",
+			"date": "00-00-0000",
+			"description": "Player management",
+			"keywords": "players, keyword",
+			"title": "Player Management"
+		}
+	}
+}
