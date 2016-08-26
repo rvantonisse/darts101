@@ -31,7 +31,9 @@ DARTS101.players = (function (DARTS101) {
   function editPlayer (name) {}
 
   // remove a player.
-  function removePlayer (name) {}
+  function removePlayer (name) {
+    
+  }
 
 
 });
